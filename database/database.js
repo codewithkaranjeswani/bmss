@@ -1,5 +1,7 @@
 // requiring the mongoose package
-const mongoose = require("mongoose");
+let mongoose = require("mongoose");
+// Set the strictQuery option to true for Mongoose to enforce strict mode when executing queries
+mongoose.set("strictQuery", true);
 require("dotenv").config();
 
 // mongodb provided connection url
